@@ -10,6 +10,7 @@ namespace OdinDTO
     {
         public int AmenitieID { get; set; }
         public string AmenitieName { get; set; }
+        public int Quantity { get;  set; }
         public string AmenitieDescription { get; set; }
     }
 }
