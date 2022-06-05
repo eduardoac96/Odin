@@ -8,7 +8,7 @@ namespace OdinDTO
 {
     public class DtoAmenities
     {
-        public int AmenitieID { get; set; }
+        public Guid AmenitieID { get; set; }
         public string AmenitieName { get; set; }
         public string AmenitieDescription { get; set; }
     }

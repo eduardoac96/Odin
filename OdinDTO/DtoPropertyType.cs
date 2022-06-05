@@ -8,7 +8,7 @@ namespace OdinDTO
 {
     public class DtoPropertyType
     {
-        public int PropertyTypeID { get; set; }
+        public Guid PropertyTypeID { get; set; }
         public string PropertyTypeName { get; set; }
 
         public string PropertyTypeDescription { get; set; }

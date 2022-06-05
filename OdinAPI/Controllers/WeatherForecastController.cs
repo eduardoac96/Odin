@@ -35,5 +35,15 @@ namespace OdinAPI.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("MexicanForescasts")]
+        public IEnumerable<WeatherForecast> GetMexicanForecasts()
+        {
+            return Enumerable.Range(1,4).Select(f => new WeatherForecast 
+            {
+                Date = DateTime.Now,
+                Summary = Summaries[1]
+            }).ToArray();
+        }
     }
 }
