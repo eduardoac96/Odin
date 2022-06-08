@@ -19,24 +19,24 @@ namespace OdinAPI.Controllers
             _realStateService = new RealStateService(realStateDAL);
 
         }
-        [HttpGet]
-        public List<OdinDTO.DtoRealStateTypes> GetPropertyTypes()
+        [HttpGet("GetRealStateTypes")]
+        public List<OdinDTO.DtoRealStateTypes> GetRealStateTypes()
         { 
-            return _realStateService.GetPropertyTypes();
+            return _realStateService.GetRealStateTypes();
         }
-        [HttpGet]
+        [HttpGet("GetRealState")]
         public List<OdinDTO.DtoRealState> GetRealState()
         { 
             return _realStateService.GetRealState();
         }
 
-        [HttpGet]
+        [HttpGet("GetSaleTypes")]
         public List<OdinDTO.DtoSaleType> GetSaleTypes()
         {
             return _realStateService.GetSaleTypes();
         }
 
-        [HttpGet]
+        [HttpGet("GetAmenities")]
         public List<OdinDTO.DtoAmenities> GetAmenities()
         { 
             return _realStateService.GetAmenities();

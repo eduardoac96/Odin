@@ -9,7 +9,7 @@ namespace OdinDAL.Mocks
 {
     public class RealStateMock : IRealStateDAL
     {
-        public List<DtoRealStateTypes> GetPropertyTypes()
+        public List<DtoRealStateTypes> GetRealStateTypes()
         {
             return new List<DtoRealStateTypes>()
             {

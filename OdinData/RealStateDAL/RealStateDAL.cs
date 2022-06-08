@@ -16,9 +16,9 @@ namespace OdinDAL
             return _realStateDAL.GetAmenities();
         }
 
-        public List<DtoRealStateTypes> GetPropertyTypes()
+        public List<DtoRealStateTypes> GetRealStateTypes()
         {
-            return _realStateDAL.GetPropertyTypes();
+            return _realStateDAL.GetRealStateTypes();
         }
 
         public List<DtoSaleType> GetSaleTypes()

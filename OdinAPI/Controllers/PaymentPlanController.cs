@@ -23,7 +23,7 @@ namespace OdinAPI.Controllers
             _paymentPlanService = new PaymentPlanService(paymentPlanDAL);
         }
 
-        [HttpGet]
+        [HttpGet("GetPaymentPlans")]
         public List<OdinDTO.PaymentPlan.DtoPaymentPlan> GetPaymentPlans()
         {
             return _paymentPlanService.GetPaymentPlans();

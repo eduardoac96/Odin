@@ -18,9 +18,9 @@ namespace OdinService
         {
             _realStateDAL = realStateDAL;
         }
-        public List<DtoRealStateTypes> GetPropertyTypes()
+        public List<DtoRealStateTypes> GetRealStateTypes()
         {
-            return _realStateDAL.GetPropertyTypes();
+            return _realStateDAL.GetRealStateTypes();
         }
 
         public List<DtoAmenities> GetAmenities()

@@ -9,7 +9,7 @@ namespace OdinDAL
 {
     public interface IRealStateDAL
     {
-        List<DtoRealStateTypes> GetPropertyTypes();
+        List<DtoRealStateTypes> GetRealStateTypes();
         List<DtoAmenities> GetAmenities();
         List<DtoSaleType> GetSaleTypes();
         List<DtoRealState> GetRealState();
