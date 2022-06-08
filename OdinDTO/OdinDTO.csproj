@@ -41,10 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DtoAmenities.cs" />
-    <Compile Include="DtoPropertyType.cs" />
-    <Compile Include="DtoRealState.cs" />
-    <Compile Include="DtoSaleType.cs" />
+    <Compile Include="PaymentPlanDTO\DtoPaymentPlan.cs" />
+    <Compile Include="RealStateDTO\DtoAmenities.cs" />
+    <Compile Include="RealStateDTO\DtoRealStateDetail.cs" />
+    <Compile Include="RealStateDTO\DtoRealStateTypes.cs" />
+    <Compile Include="RealStateDTO\DtoRealState.cs" />
+    <Compile Include="RealStateDTO\DtoSaleType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

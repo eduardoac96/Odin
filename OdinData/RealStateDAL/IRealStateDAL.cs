@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OdinData
+namespace OdinDAL
 {
-    public interface IPropertiesData
+    public interface IRealStateDAL
     {
-        List<DtoPropertyType> GetPropertyTypes();
+        List<DtoRealStateTypes> GetPropertyTypes();
         List<DtoAmenities> GetAmenities();
         List<DtoSaleType> GetSaleTypes();
         List<DtoRealState> GetRealState();

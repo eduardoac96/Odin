@@ -51,9 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IPropertiesData.cs" />
-    <Compile Include="Mocks\PropertiesMock.cs" />
-    <Compile Include="PropertiesData.cs" />
+    <Compile Include="Mocks\PaymentPlanMock\PaymentPlanMock.cs" />
+    <Compile Include="PaymentPlanDAL\IPaymentPlanDAL.cs" />
+    <Compile Include="PaymentPlanDAL\PaymentPlanDAL.cs" />
+    <Compile Include="RealStateDAL\IRealStateDAL.cs" />
+    <Compile Include="Mocks\RealStateMock\RealStateMock.cs" />
+    <Compile Include="RealStateDAL\RealStateDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

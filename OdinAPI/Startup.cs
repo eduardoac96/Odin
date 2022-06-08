@@ -6,8 +6,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using OdinData;
-using OdinData.Mocks;
+using OdinDAL;
+using OdinDAL.Mocks;
+using OdinData.Mocks.PaymentPlanMock;
+using OdinData.PaymentPlanDAL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +30,8 @@ namespace OdinAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddTransient<IPropertiesData, PropertiesMock>();
+            services.AddTransient<IRealStateDAL, RealStateMock>();
+            services.AddTransient<IPaymentPlanDAL, PaymentPlanMock>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

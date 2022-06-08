@@ -1,42 +1,46 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using OdinDAL;
 using OdinService;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
-namespace OdinAPI.Controllers.RealState
+namespace OdinAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class RealStateController : ControllerBase
     {
+        private readonly ILogger<RealStateController> _logger; 
         private RealStateService _realStateService;
 
-        public RealStateController()
+        public RealStateController(ILogger<RealStateController> logger, IRealStateDAL realStateDAL)
         {
-            _realStateService = new RealStateService();
+            _logger = logger; 
+            _realStateService = new RealStateService(realStateDAL);
+
         }
-         
         [HttpGet]
-        public IEnumerable<OdinDTO.DtoAmenities> GetAmenities()
-        {
-            return _realStateService.GetAmenities();
+        public List<OdinDTO.DtoRealStateTypes> GetPropertyTypes()
+        { 
+            return _realStateService.GetPropertyTypes();
+        }
+        [HttpGet]
+        public List<OdinDTO.DtoRealState> GetRealState()
+        { 
+            return _realStateService.GetRealState();
         }
 
         [HttpGet]
-        public IEnumerable<OdinDTO.DtoPropertyType> GetPropertyTypes()
-        {
-            return _realStateService.GetPropertyTypes();
-        }
-         
-        [HttpGet]
-        public IEnumerable<OdinDTO.DtoSaleType> GetSaleTypes()
+        public List<OdinDTO.DtoSaleType> GetSaleTypes()
         {
             return _realStateService.GetSaleTypes();
         }
-            
+
+        [HttpGet]
+        public List<OdinDTO.DtoAmenities> GetAmenities()
+        { 
+            return _realStateService.GetAmenities();
+        }
+
     }
 }

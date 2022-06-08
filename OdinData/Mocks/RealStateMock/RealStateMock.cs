@@ -5,39 +5,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OdinData.Mocks
+namespace OdinDAL.Mocks
 {
-    public class PropertiesMock : IPropertiesData
+    public class RealStateMock : IRealStateDAL
     {
-        public List<DtoPropertyType> GetPropertyTypes()
+        public List<DtoRealStateTypes> GetPropertyTypes()
         {
-            return new List<DtoPropertyType>()
+            return new List<DtoRealStateTypes>()
             {
-                new DtoPropertyType()
+                new DtoRealStateTypes()
                 {
                     PropertyTypeID = Guid.NewGuid(),
                     PropertyTypeName = "Departamento",
                     PropertyTypeDescription = ""
                 },
-                       new DtoPropertyType()
+                       new DtoRealStateTypes()
                 {
                     PropertyTypeID = Guid.NewGuid(),
                     PropertyTypeName = "Casa",
                     PropertyTypeDescription = ""
                 },
-                              new DtoPropertyType()
+                              new DtoRealStateTypes()
                 {
                     PropertyTypeID = Guid.NewGuid(),
                     PropertyTypeName = "Condominio",
                     PropertyTypeDescription = ""
                 },
-                    new DtoPropertyType
+                    new DtoRealStateTypes
                 {
                     PropertyTypeID = Guid.NewGuid(),
                     PropertyTypeName = "Quintas",
                     PropertyTypeDescription = ""
                 },
-                    new DtoPropertyType
+                    new DtoRealStateTypes
                 {
                     PropertyTypeID = Guid.NewGuid(),
                     PropertyTypeName = "Loft",

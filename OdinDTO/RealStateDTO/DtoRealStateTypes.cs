@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OdinDTO
 {
-    public class DtoPropertyType
+    public class DtoRealStateTypes
     {
         public Guid PropertyTypeID { get; set; }
         public string PropertyTypeName { get; set; }

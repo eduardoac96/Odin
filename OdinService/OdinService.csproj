@@ -41,13 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PropertiesService.cs" />
+    <Compile Include="PaymentPlanService\PaymentPlanService.cs" />
+    <Compile Include="RealStateService\RealStateService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OdinData\OdinData.csproj">
+    <ProjectReference Include="..\OdinData\OdinDAL.csproj">
       <Project>{891F847D-DC95-4CEE-97A3-B6843953B180}</Project>
-      <Name>OdinData</Name>
+      <Name>OdinDAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\OdinDTO\OdinDTO.csproj">
       <Project>{6FA40591-CB61-4475-9133-4D97B78AFD84}</Project>
